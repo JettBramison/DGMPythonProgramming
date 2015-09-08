@@ -3,17 +3,17 @@ using System.Collections;
 
 public class VariablesAndFunctions : MonoBehaviour {
 
-	int myInt = 5 ;
+	int myInt = 75 ;
 	// Use this for initialization
 	void Start () {
-		myInt = MultiplyByTwo (myInt);
+		myInt = MultiplyByThree (myInt);
 		Debug.Log (myInt);
 	}
 
-	int MultiplyByTwo (int number){
+	int MultiplyByThree (int number){
 		int ret;
 
-		ret = number * 2;
+		ret = number * 3;
 
 		return ret;
 	}
