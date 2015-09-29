@@ -46,10 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DoWhileLoop.cs" />
+     <Compile Include="Assets\ForEachLoop.cs" />
+     <Compile Include="Assets\ForLoop.cs" />
      <Compile Include="Assets\IfStatements.cs" />
-     <Compile Include="Assets\Loops.cs" />
      <Compile Include="Assets\SyntaxAndConventions.cs" />
      <Compile Include="Assets\VariablesAndFunctions.cs" />
+     <Compile Include="Assets\WhileLoop.cs" />
      <Compile Include="Assets\conventionsandsyntaxpassoff.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
