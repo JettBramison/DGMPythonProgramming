@@ -8,33 +8,50 @@ public class IfStatements : MonoBehaviour
 	float lowerLimitPressure = 30.0f;
 
 
+	void Start ()
+	{
+			print ("Press spacebar to begin.");
+	}
+
+
 	// Update is called once per frame
 	void Update () 
+
 	{
+
 		if (Input.GetKeyDown (KeyCode.Space))
 			TemperatureTest ();
 
-		explosivePressure += Time.deltaTime * 5f;
+		explosivePressure += Time.deltaTime * 6f;
 	}
 
 	void TemperatureTest ()
 	{
 		//if the explosive's pressure is greater than the lowest limit
-		if (explosivePressure < lowerLimitPressure) {
-			//do this
-			print ("Pressure Levels are reaching ciritcal. Evacuation is advised.");
+		if (explosivePressure < lowerLimitPressure) 
+		{
+			print ("Pressure levels are stable however, the levels are rising.");
 
 		}
 
+		// If it's rising just above the start temp
+		else if (explosivePressure < upperLimitPressure) 
+		{
+			//do this
+			print ("Pressure Levels are reaching ciritcal. Evacuation is advised.");
+		} 
+
 		// if the pressure is greater than the upper most pressure limit
-		else if (explosivePressure > upperLimitPressure) {
+		else if (explosivePressure > upperLimitPressure) 
+		{
 			//do this
 			print ("Pressure Levels Critical: Immediate evactuation required!");
 		}
 
-		// If it's neiter of those then
-		else {
-			print ("Pressure levels are stable however, the levels are rising.");
+		// If it's none of those then
+		else 
+		{
+			print ("An unknown error has occured. Please contact your explosive administrator.");
 		}
 	}
 
