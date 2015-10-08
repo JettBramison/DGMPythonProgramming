@@ -46,10 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AnotherClass.cs" />
      <Compile Include="Assets\DoWhileLoop.cs" />
      <Compile Include="Assets\ForEachLoop.cs" />
      <Compile Include="Assets\ForLoop.cs" />
      <Compile Include="Assets\IfStatements.cs" />
+     <Compile Include="Assets\ScopeAndAccessModifiers.cs" />
      <Compile Include="Assets\SyntaxAndConventions.cs" />
      <Compile Include="Assets\VariablesAndFunctions.cs" />
      <Compile Include="Assets\WhileLoop.cs" />

@@ -20,12 +20,12 @@ public class IfStatements : MonoBehaviour
 	{
 
 		if (Input.GetKeyDown (KeyCode.Space))
-			TemperatureTest ();
+			PressureTest ();
 
 		explosivePressure += Time.deltaTime * 6f;
 	}
 
-	void TemperatureTest ()
+	void PressureTest ()
 	{
 		//if the explosive's pressure is greater than the lowest limit
 		if (explosivePressure < lowerLimitPressure) 

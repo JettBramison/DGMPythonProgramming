@@ -1,25 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WhileLoop : MonoBehaviour {
+public class WhileLoop : MonoBehaviour 
+{
 
-	int cupsInTheSink = 4;
+	int bladesOfGrass = 100;
 
 
 	// Use this for initialization
 	void Start () 
 	{
-
-		while (cupsInTheSink > 0)
+		while (bladesOfGrass > 0) 
 		{
-			print ("I've washed a cup!");
-			cupsInTheSink--;
+			print ("I'm cutting the grass!");
+			bladesOfGrass -= 15;
+			print (bladesOfGrass);
 		}
-	
 	}
+
+
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
