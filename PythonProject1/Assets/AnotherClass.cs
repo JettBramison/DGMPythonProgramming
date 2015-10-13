@@ -3,26 +3,26 @@ using System.Collections;
 
 public class AnotherClass
 {
-	public int apples;
-	public int bananas;
+	public int voidWhip;
+	public int kraorgBlaster;
 	
 	
-	private int stapler;
-	private int sellotape;
+	private int dannonLauncher;
+	private int hypoPunch;
 	
 	
-	public void FruitMachine (int a, int b)
+	public void InfinityBag (int a, int b)
 	{
 		int answer;
 		answer = a + b;
-		Debug.Log("Fruit total: " + answer);
+		Debug.Log("Mystical Items Total: " + answer);
 	}
 	
 	
-	private void OfficeSort (int a, int b)
+	private void StoreInventory (int a, int b)
 	{
 		int answer;
 		answer = a + b;
-		Debug.Log("Office Supplies total: " + answer);
+		Debug.Log("Store Inventory Total: " + answer);
 	}
 }

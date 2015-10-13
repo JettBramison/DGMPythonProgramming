@@ -3,11 +3,11 @@ using System.Collections;
 
 public class ScopeAndAccessModifiers : MonoBehaviour
 {
-	public int alpha = 5;
+	public int rocks = 10;
 	
 	
-	private int beta = 0;
-	private int gamma = 5;
+	private int weeds = 6;
+	private int torches = 2;
 	
 	
 	private AnotherClass myOtherClass;
@@ -15,23 +15,23 @@ public class ScopeAndAccessModifiers : MonoBehaviour
 	
 	void Start ()
 	{
-		alpha = 29;
+		rocks = 57;
 		
 		myOtherClass = new AnotherClass();
-		myOtherClass.FruitMachine(alpha, myOtherClass.apples);
+		myOtherClass.InfinityBag(rocks, myOtherClass.voidWhip);
 	}
 	
 	
-	void Example (int pens, int crayons)
+	void Example (int shovels, int eggs)
 	{
 		int answer;
-		answer = pens * crayons * alpha;
+		answer = shovels * eggs * rocks;
 		Debug.Log(answer);
 	}
 	
 	
 	void Update ()
 	{
-		Debug.Log("Alpha is set to: " + alpha);
+		Debug.Log("There are this many rocks: " + rocks);
 	}
 }
